@@ -16197,15 +16197,15 @@ s=new E.fR(new Float64Array(4))
 s.pv(0,0,0,a.b)
 r.uu(1,s)
 return r},
-yU(a){var s=0,r=P.a7(t.y),q,p,o,n,m
-var $async$yU=P.a1(function(b,c){if(b===1)return P.a4(c,r)
+yU(a,b){var s=0,r=P.a7(t.y),q,p,o,n,m
+var $async$yU=P.a1(function(c,d){if(c===1)return P.a4(d,r)
 while(true)switch(s){case 0:m=P.aa5(C.c.KM(a))
 if(m!=null)p=m.giD()==="http"||m.giD()==="https"
 else p=!1
 o=$.ai3()
 s=3
-return P.a9(o.Js(a,!1,!1,C.EW,!1,p,!1,null),$async$yU)
-case 3:n=c
+return P.a9(o.Js(a,!1,!1,C.EW,!1,p,!1,b),$async$yU)
+case 3:n=d
 q=n
 s=1
 break
@@ -34732,7 +34732,7 @@ Z.YS.prototype={
 $2(a,b){return C.HM},
 $S:141}
 R.rH.prototype={
-Z0(){T.yU("https://giorgio-marga.github.io/diary-little-stories/#/support")},
+Z0(){T.yU("https://giorgio-marga.github.io/diary-little-stories/#/support","_self")},
 K(a,b){var s=null,r=B.d0(C.KF),q=this.c
 if(q==null){q=N.vy(s)
 q.aG=this.gZ_()
@@ -34764,7 +34764,7 @@ K(a,b){return C.Au}}
 K.rR.prototype={
 aF(){return new K.wG(C.m)}}
 K.wG.prototype={
-X9(){T.yU(u.d)},
+X9(){T.yU(u.d,null)},
 K(a,b){var s,r=this,q=null,p=Q.fO(q,q,q,q,q,B.d0(C.bg),"Download App for iPhone: "),o=C.hw.h(0,800)
 o.toString
 o=B.d0(A.p8(q,q,o,q,r.d?C.i_:q,q,q,q,q,q,q,16,q,q,q,q,!0,q,q,q,q,q,q,q,q))
@@ -34789,7 +34789,7 @@ $S:0}
 L.rS.prototype={
 aF(){return new L.wH(C.m)}}
 L.wH.prototype={
-YZ(){T.yU(u.d)},
+YZ(){T.yU(u.d,null)},
 K(a,b){var s,r=null,q=Q.fO(r,r,r,r,r,B.d0(C.bg),"Download App for iPhone: "),p=C.hw.h(0,800)
 p.toString
 p=B.d0(A.p8(r,r,p,r,C.i_,r,r,r,r,r,r,16,r,r,r,r,!0,r,r,r,r,r,r,r,r))
@@ -59174,10 +59174,10 @@ $S:363}
 D.a0X.prototype={}
 Y.a0Y.prototype={
 Js(a,b,c,d,e,f,g,h){var s,r
-if(this.d){s=P.aa5(a)
+if(h==null){if(this.d){s=P.aa5(a)
 s=s==null?null:s.giD()
 s=J.ec(C.Gt.a,s)}else s=!1
-r=s?"_top":""
+r=s?"_top":""}else r=h
 C.aj.a5E(this.c,a,r)
 return P.cn(!0,t.y)}}
 A.a7l.prototype={
